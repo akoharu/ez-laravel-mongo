@@ -8,6 +8,7 @@
 ## Laravel MongoDB Documentation
 - [Laravel MongoDB](https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/)
 - [MongoDB Laravel Integration](https://www.mongodb.com/resources/products/compatibilities/mongodb-laravel-integration)
+- [MongoDB Laravel Eloquent Models](https://www.mongodb.com/docs/drivers/php/laravel-mongodb/current/eloquent-models/model-class/)
 
 ## Setup
 
