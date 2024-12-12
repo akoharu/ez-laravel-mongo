@@ -4,7 +4,10 @@
 
 - [Lando](https://docs.lando.dev/getting-started/installation/)
 - [MongoDB](https://www.mongodb.com/try/download/community)
+
+## Laravel MongoDB Documentation
 - [Laravel MongoDB](https://www.mongodb.com/developer/languages/php/laravel-mongodb-tutorial/)
+- [MongoDB Laravel Integration](https://www.mongodb.com/resources/products/compatibilities/mongodb-laravel-integration)
 
 ## Setup
 
