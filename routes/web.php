@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MovieController;
-
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/browse_movies/', [MovieController::class, 'show']);
+Route::get('/browse_invoices/', [InvoiceController::class, 'show']);
