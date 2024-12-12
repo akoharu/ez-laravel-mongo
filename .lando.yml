@@ -1,0 +1,47 @@
+name: ez-billing
+recipe: laravel
+
+config:
+  via: nginx
+  composer_version: 2-latest
+  webroot: public
+  cache: redis
+  xdebug: true
+  php: "8.2"
+
+proxy:
+  mailhog:
+    - mail.ez-billing.lndo.site
+
+services:
+  appserver:
+    overrides:
+      environment:
+        XDEBUG_MODE: 'debug,develop,coverage'
+
+  mailhog:
+    type: mailhog:v1.0.0
+    portforward: true
+    hogfrom: []
+
+  node:
+    type: node:18
+    scanner: false
+    ports:
+      - 3009:3009
+    build:
+      - npm install
+
+tooling:
+  phpunit:
+    service: appserver
+    description: "Run PHP Unit tests: lando phpunit"
+    cmd: /app/vendor/bin/phpunit
+  npm:
+    service: node
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build
