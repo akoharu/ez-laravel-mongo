@@ -12,7 +12,9 @@
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "mongodb/laravel-mongodb": "^5.1"
+        "mongodb/laravel-mongodb": "^5.1",
+        "inertiajs/inertia-laravel": "^1.3",
+        "laravel/pennant": "^1.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

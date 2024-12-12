@@ -1,0 +1,38 @@
+{
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.tsx"],
+    "compilerOptions": {
+        // project options
+        "target": "es6",
+        "paths": {
+            "@/*": ["./resources/js/*"]
+        },
+        "types": ["vite/client"],
+        "typeRoots": ["./node_modules/@types"],
+        "allowSyntheticDefaultImports": true,
+        "lib": ["dom", "esnext"],
+        "downlevelIteration": true,
+        "importHelpers": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "jsx": "react",
+
+        // Module resolution
+        "baseUrl": ".",
+        "module": "esnext",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+
+        // Other options
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true
+    },
+    "compileOnSave": false
+}

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: GreycliffCF, sans-serif;
+}
+
+.font-greycliff {
+    font-family: GreycliffCF, sans-serif;
+}
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+    html {
+        @apply text-gray-900;
+        @apply bg-grey-1;
+    }
+}
