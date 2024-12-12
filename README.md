@@ -24,3 +24,8 @@ docker-php-ext-enable mongodb
 5. `lando restart`
 6. `cp .env.example .env`
 7. `lando composer install`
+
+## Run
+
+1. `lando dev` to run Vite development server
+2. `open https://ez-billing.lndo.site/` to open the application
