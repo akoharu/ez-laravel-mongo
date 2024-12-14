@@ -24,9 +24,7 @@ const Master: React.FC<MasterProps> = ({ children, title, currentUser }) => {
     return (
         <AuthProvider user={currentUser}>
             <Head title={`${title} - ${APP_NAME}`} />
-            <div className="antialiased">
-                <main className="md:px-20 pt-[7.5rem] px-4">{children}</main>
-            </div>
+            {children}
         </AuthProvider>
     );
 };
